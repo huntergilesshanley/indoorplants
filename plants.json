@@ -1,0 +1,12 @@
+{
+  "plants": [
+    {
+      "plant": {
+        "image_url": 'https://www.trbimg.com/img-558de3c0/turbine/ct-sun-0705-garden-morton-20150625',
+        "name": 'Hibiscus',
+        "scientific_name": 'HB',
+        "price": '30'
+      }
+    }
+  ]
+}

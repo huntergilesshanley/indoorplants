@@ -1,0 +1,203 @@
+body, html {
+    padding: 0;
+    margin:0;
+background: lightsteelblue;
+}
+* {
+    font-family: helvetica;
+    box-sizing: content-box;
+}
+
+.btnArray ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+.btnArray li {
+    width: 10%;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.btnArray li button{
+    width: 100%;
+    height: 100%;
+}
+
+
+#mainNav {
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+
+#mainNavLinks {
+display:flex;
+
+}
+
+#mainNavLinks>a {
+    padding: 10px 10px 10px 10px;
+
+    text-decoration: none;
+
+    color: black;
+    margin: 0px 10px 0px 10px;
+    background-color: white;
+}
+
+#mainNavLinks>a:hover {
+   text-decoration: underline;
+}
+.hack {
+  background-color: transparent!important;
+}
+
+#mainNavButtons>button {
+    padding: 10px 50px 10px 50px;
+    margin: 0px 10px 0px 10px;
+cursor: pointer;
+}
+#mainNavButtons>button:hover {
+    transform: scale(1.2);
+}
+
+#contents {
+
+
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+li {
+    padding: 20px 50px 20px 50px;
+    width: 200px;
+    margin:15px;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    background: rgb(19, 19, 19);
+    cursor: pointer;
+    outline: 1px rgb(50, 50, 50) solid;
+    outline-offset: 3px;
+    z-index: 0;
+    transition: all 100ms ease-in-out;
+    height: 300px;
+}
+li:hover {
+    outline-offset: 8px;
+    transform:scale(1.1);
+}
+li:hover>span{
+    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+}
+.emoji {
+    float: right;
+    font-size: 150px;
+}
+#modal {
+    position: fixed; 
+    top:0;
+    bottom:0;
+    position: fixed;
+z-index:15;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+display: none;
+}
+.buyButton {
+    width: 50%;
+    height: 50px;
+    border: none;
+    float:right;
+    cursor: pointer;
+    position: relative;
+    bottom: 0;
+    background: gold;
+}
+.buyButton:hover {
+transform: scale(1.1);
+}
+
+.text {
+    background-color: rgba(0, 0, 0, 0.50);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    position: absolute;
+    width: 160px;
+}
+
+
+#titleNav {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+   
+}
+
+#titleNav h1 {
+    font-size: 3em;
+    font-family: 'Faustina', serif;
+}
+
+li:last-child {
+   
+    flex-grow: 10;
+  }
+
+.shoudadonethisbefore {
+    max-height: 100%;
+
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+#section {
+    display:flex;
+    flex-direction: column;
+align-items: center;
+}
+
+#about {
+    display:flex;
+    flex-direction: column;
+width:50%;
+margin-top:100px;
+}
+
+sup {
+    color: gray;
+}
+
+#contform {
+
+}
+
+#contform input {
+    padding: 10px;
+    width: 50%;
+    border-radius: 8px;
+    border: 1px black solid;
+}
+#contform input[type|="submit"] {
+    padding: 10px;
+    width: 50%;
+    border: 1px black solid;
+    
+}
+#contform textarea {
+    padding: 10px;
+    width: 50%;
+    height: 150px;
+}
