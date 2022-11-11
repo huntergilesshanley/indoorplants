@@ -40,7 +40,7 @@ let load = async () => {
     let word = genWord();
     ///"https://source.unsplash.com/random/500x750/?fruit&seed="+genWord()
     plants.push( {
-      imageurl: "' (`+((Math.floor(Math.random()*6))+1)+`).webp'",
+      imageurl: " ('+((Math.floor(Math.random()*6))+1)+').webp",
       name: word,
       scientific_name: word+ genWord(), 
       size: Math.random() > 0.5 ? 1 : 2,
