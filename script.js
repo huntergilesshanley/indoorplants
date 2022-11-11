@@ -40,7 +40,7 @@ let load = async () => {
     let word = genWord();
     ///"https://source.unsplash.com/random/500x750/?fruit&seed="+genWord()
     plants.push( {
-      imageurl: " ("+((Math.floor(Math.random()*6))+1)+").webp",
+      imageurl: ((Math.floor(Math.random()*6))+1),
       name: word,
       scientific_name: word+ genWord(), 
       size: Math.random() > 0.5 ? 1 : 2,
@@ -67,7 +67,7 @@ let load = async () => {
         elm.ariaRoleDescription="img";
         elm.ariaLabel="An image of a " + plant.name;
         elm.style.flexDirection="column";
-        elm.style.backgroundImage="url('"+plant.imageurl+"')";
+        elm.style.backgroundImage="url(' ("+plant.imageurl+"')'.webp)";
         elm.style.backgroundRepeat="no-repeat";
         elm.style.backgroundSize="cover";
         elm.classList.add("shoudadonethisbefore");
