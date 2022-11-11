@@ -67,7 +67,7 @@ let load = async () => {
         elm.ariaRoleDescription="img";
         elm.ariaLabel="An image of a " + plant.name;
         elm.style.flexDirection="column";
-        elm.style.backgroundImage="url(' ("+plant.imageurl+"')'.webp)";
+        elm.style.backgroundImage="url('%20("+plant.imageurl+"')'.webp)";
         elm.style.backgroundRepeat="no-repeat";
         elm.style.backgroundSize="cover";
         elm.classList.add("shoudadonethisbefore");
